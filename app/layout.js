@@ -1,4 +1,4 @@
-import { Inter, Parkinsans, Manrope, Schibsted_Grotesk } from "next/font/google";
+import { Inter, Parkinsans, Manrope, Schibsted_Grotesk, Archivo_Black } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -6,16 +6,16 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const parkinsans = Parkinsans({ 
-  subsets: ["latin"], 
+const parkinsans = Parkinsans({
+  subsets: ["latin"],
   variable: "--font-parkinsans",
   display: "swap",
-  adjustFontFallback: false, 
+  adjustFontFallback: false,
 });
 
-const manrope = Manrope({ 
-  subsets: ["latin"], 
-  variable: "--font-manrope" 
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
 });
 
 const schibstedGrotesk = Schibsted_Grotesk({
@@ -25,6 +25,13 @@ const schibstedGrotesk = Schibsted_Grotesk({
   adjustFontFallback: false,
 });
 
+const archivoBlack = Archivo_Black({
+  weight: "400", // 👈 এখানে weight যোগ করলাম
+  subsets: ["latin"],
+  variable: "--font-archivo-black",
+  display: "swap",
+  adjustFontFallback: false,
+});
 
 export const metadata = {
   title: "Orange SMM Panel",
@@ -33,10 +40,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en" suppressHydrationWarning
-    >
-      <body className={`${inter.variable} ${parkinsans.variable} ${manrope.variable} ${schibstedGrotesk.variable} font-sans antialiased`}>
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${inter.variable} ${parkinsans.variable} ${manrope.variable} ${schibstedGrotesk.variable} ${archivoBlack.variable} font-sans antialiased`}
+      >
         {children}
       </body>
     </html>
