@@ -1,4 +1,4 @@
-import { Inter, Parkinsans } from "next/font/google";
+import { Inter, Parkinsans, Manrope } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -13,6 +13,10 @@ const parkinsans = Parkinsans({
   adjustFontFallback: false, 
 });
 
+const manrope = Manrope({ 
+  subsets: ["latin"], 
+  variable: "--font-manrope" 
+});
 
 
 export const metadata = {
@@ -25,7 +29,7 @@ export default function RootLayout({ children }) {
     <html
       lang="en" suppressHydrationWarning
     >
-      <body className={`${inter.variable} ${parkinsans.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${parkinsans.variable} ${manrope.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>
