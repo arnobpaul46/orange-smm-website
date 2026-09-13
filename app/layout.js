@@ -1,4 +1,4 @@
-import { Inter, Parkinsans, Manrope } from "next/font/google";
+import { Inter, Parkinsans, Manrope, Schibsted_Grotesk } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -18,6 +18,13 @@ const manrope = Manrope({
   variable: "--font-manrope" 
 });
 
+const schibstedGrotesk = Schibsted_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-schibsted-grotesk",
+  display: "swap",
+  adjustFontFallback: false,
+});
+
 
 export const metadata = {
   title: "Orange SMM Panel",
@@ -29,7 +36,7 @@ export default function RootLayout({ children }) {
     <html
       lang="en" suppressHydrationWarning
     >
-      <body className={`${inter.variable} ${parkinsans.variable} ${manrope.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${parkinsans.variable} ${manrope.variable} ${schibstedGrotesk.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>

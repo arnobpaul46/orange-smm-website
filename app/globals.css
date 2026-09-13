@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+
+@keyframes dotBlink {
+  0%, 100% { opacity: 0.55; }
+  50%      { opacity: 1; }
+}
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
