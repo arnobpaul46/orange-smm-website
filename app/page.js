@@ -1,3 +1,4 @@
+import Growth from "@/components/Growth";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import PaymentMethods from "@/components/PaymentMethods";
@@ -15,6 +16,7 @@ export default function Home() {
       <Services/>
       <WorkingProcess/>
       <PaymentMethods/>
+      <Growth/>
     </div>
   );
 }
