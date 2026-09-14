@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { label: "Home", href: "#", active: true },
@@ -20,15 +21,21 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full bg-gradient-to-r from-[#FFFBF8] to-[#FFEFE2] shadow-sm border-b border-orange-100/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          
+
           {/* Logo Section */}
           <div className="flex-shrink-0">
-            <a
-              href="#"
-              className="bg-white rounded-xl px-6 py-2.5 shadow-sm inline-block"
-            >
-              <span className="text-[#FF6B00] font-bold text-lg tracking-wider">
-                LOGO
+            <a href="#" className="inline-flex items-center gap-2">
+              <Image
+                src="/logo.png"
+                alt="Logo"
+                width={44}
+                height={44}
+                className="w-10 h-10 sm:w-11 sm:h-11 object-contain"
+                priority
+              />
+              <span className="font-heading font-bold text-[16px] sm:text-[18px] text-[#FF6B00] tracking-tight">
+                Orange<br />
+                <span className=" text-green-600">SMM Panel</span>
               </span>
             </a>
           </div>
@@ -39,11 +46,10 @@ export default function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
-                className={`text-sm font-medium transition-colors duration-200 ${
-                  link.active
+                className={`text-sm font-medium transition-colors duration-200 ${link.active
                     ? "text-[#FF6B00]"
                     : "text-gray-700 hover:text-[#FF6B00]"
-                }`}
+                  }`}
               >
                 {link.label}
               </a>
@@ -98,9 +104,8 @@ export default function Navbar() {
                   key={link.label}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={`block text-base font-medium ${
-                    link.active ? "text-[#FF6B00]" : "text-gray-700"
-                  }`}
+                  className={`block text-base font-medium ${link.active ? "text-[#FF6B00]" : "text-gray-700"
+                    }`}
                 >
                   {link.label}
                 </a>

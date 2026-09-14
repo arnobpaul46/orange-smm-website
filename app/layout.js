@@ -35,7 +35,12 @@ const archivoBlack = Archivo_Black({
 
 export const metadata = {
   title: "Orange SMM Panel",
-  description: "Fast ,Safe & Growth in Social Media",
+  description: "Fast, Safe & Growth in Social Media",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({ children }) {
