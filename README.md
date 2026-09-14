@@ -2,7 +2,7 @@
 
 A modern, pixel-perfect, fully responsive landing page for an SMM (Social Media Marketing) Panel built with **Next.js 14**, **Tailwind CSS**, and **Framer Motion**.
 
-🔗 **Live Demo:** [https://your-live-url.vercel.app](https://your-live-url.vercel.app)
+🔗 **Live Demo:** [https://orange-smm-panel.vercel.app/](https://orange-smm-panel.vercel.app/)
 
 ---
 
@@ -29,8 +29,7 @@ This project recreates a Figma design for an SMM Panel landing page, featuring:
 | **Tailwind CSS** | Utility-first styling |
 | **Framer Motion** | Smooth animations & micro-interactions |
 | **Lucide React** | Icon library |
-| **Google Fonts** | Inter, Parkinsans, Schibsted Grotesk, Archivo Black |
-| **Fontshare** | Switzer font (via CDN) |
+| **Google Fonts** | Inter, Parkinsans, Schibsted Grotesk, Archivo Black,Manrope |
 
 ---
 
@@ -46,7 +45,7 @@ Make sure you have installed:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/orange-smm-panel.git
+git clone https://github.com/arnobpaul46/orange-smm-website
 
 # 2. Navigate to project folder
 cd orange-smm-panel
@@ -80,7 +79,6 @@ orange-smm-panel/
 ├── app/
 │   ├── layout.js              # Root layout + fonts + metadata
 │   ├── page.js                # Main landing page (imports all sections)
-│   ├── icon.png               # Favicon
 │   └── globals.css            # Global styles + Tailwind directives
 │
 ├── components/
@@ -151,7 +149,7 @@ orange-smm-panel/
 |---|---|---|
 | **Parkinsans** | 700 | Headings |
 | **Inter** | 400-600 | Body text |
-| **Switzer** | 700 | Numbers in stats/growth cards |
+| **Manrope** | 700 | Numbers in stats/growth cards |
 | **Schibsted Grotesk** | 700 | Working process numbers |
 | **Archivo Black** | 400 | Big "MULTIPLE PAYMENTS" text |
 
@@ -212,17 +210,11 @@ Your site will be live at `https://your-project.vercel.app`
 
 ---
 
-## 📝 License
-
-This project is licensed under the MIT License.
-
----
-
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
-- Email: your.email@example.com
+- GitHub: [@arnobpaul46](https://github.com/arnobpaul46)
+- Email: arnobpualbd@gmail.com
 
 ---
 
@@ -230,7 +222,7 @@ This project is licensed under the MIT License.
 
 - Design inspiration from Figma community
 - Icons by [Lucide](https://lucide.dev)
-- Fonts by [Google Fonts](https://fonts.google.com) & [Fontshare](https://fontshare.com)
+- Fonts by [Google Fonts](https://fonts.google.com) 
 
 ---
 
