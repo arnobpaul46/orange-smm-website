@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function CTA() {
   return (
-    <section className="relative w-full bg-white pt-20 lg:pt-28 pb-14 lg:pb-20">
+    <section className="relative w-full bg-white  pb-14 lg:pb-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <motion.div

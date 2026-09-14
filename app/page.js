@@ -1,6 +1,7 @@
 import Advantages from "@/components/Advantages";
 import CTA from "@/components/CTA";
 import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer";
 import Growth from "@/components/Growth";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -23,6 +24,7 @@ export default function Home() {
       <Advantages/>
       <FAQ/>
       <CTA/>
+      <Footer/>
     </div>
   );
 }
