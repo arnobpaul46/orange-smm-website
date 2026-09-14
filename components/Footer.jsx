@@ -23,7 +23,7 @@ const socials = [
 
 const contacts = [
     { src: "/mail.png", alt: "Email", text: "info@smmsun.com" },
-    { src: "/WhatsApp.png", alt: "WhatsApp", text: "+1 833 252 278" },
+    { src: "/Whatsapp.png", alt: "WhatsApp", text: "+1 833 252 278" },
     { src: "/men.png", alt: "Location", text: "Serving all of Bangladesh\nSupport: 24/7" },
 ];
 
